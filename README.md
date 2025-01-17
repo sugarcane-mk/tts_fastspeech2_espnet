@@ -5,5 +5,5 @@ install esp net
 ```bash
 git clone https://github.com/espnet/espnet
 cd espnet
-./setup.sh
+./setup.py
 

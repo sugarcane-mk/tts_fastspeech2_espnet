@@ -30,4 +30,19 @@ Ensure that your current directory is ../espnet/tools. Then, run the following c
 bash -c ". ./activate_python.sh; . ./extra_path.sh; python3 check_install.py"
 ```
 ## 2. Setup or create from existing recipe
+1. Copying a recipe template to yor directory `espnet/egs2/mydir/tts1`
+   ```
+   cd espnet
+   ```
+   ```
+   task=tts1  # You can chose any template eg. tts, mt1, st1..
+   egs2/TEMPLATE/${task}/setup.sh egs2/mydir/${task}
+   ```
+2.
+3. Copy or create `run.sh` from the existing recipie
+   ```
+   cd egs2/foo/${task}
+   cp ../../mini_an4/${task}/run.sh .
+   vi run.sh
+   ```
 
